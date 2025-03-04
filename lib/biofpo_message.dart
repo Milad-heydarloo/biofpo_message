@@ -4,19 +4,59 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class BioFpoMessage {
-  static void showSuccess({required String title, required String message}) {
-    _showSnackbar(title: title, message: message, backgroundColor: Colors.green);
+  /// نمایش پیام موفقیت
+  static void showSuccess({
+    required String title,
+    required String message,
+    SnackPosition position = SnackPosition.TOP,
+  }) {
+    _showSnackbar(
+      title: title,
+      message: message,
+      backgroundColor: Colors.green,
+      icon: Icons.check_circle,
+      position: position,
+    );
   }
 
-  static void showError({required String title, required String message}) {
-    _showSnackbar(title: title, message: message, backgroundColor: Colors.red);
+  /// نمایش پیام خطا
+  static void showError({
+    required String title,
+    required String message,
+    SnackPosition position = SnackPosition.TOP,
+  }) {
+    _showSnackbar(
+      title: title,
+      message: message,
+      backgroundColor: Colors.red,
+      icon: Icons.error,
+      position: position,
+    );
   }
 
-  static void showInfo({required String title, required String message}) {
-    _showSnackbar(title: title, message: message, backgroundColor: Colors.blue);
+  /// نمایش پیام اطلاعاتی
+  static void showInfo({
+    required String title,
+    required String message,
+    SnackPosition position = SnackPosition.TOP,
+  }) {
+    _showSnackbar(
+      title: title,
+      message: message,
+      backgroundColor: Colors.blue,
+      icon: Icons.info,
+      position: position,
+    );
   }
 
-  static void _showSnackbar({required String title, required String message, required Color backgroundColor}) {
+  /// متد عمومی برای نمایش پیام‌ها
+  static void _showSnackbar({
+    required String title,
+    required String message,
+    required Color backgroundColor,
+    required IconData icon,
+    SnackPosition position = SnackPosition.TOP,
+  }) {
     Get.snackbar(
       "موفقیت",
       "عملیات با موفقیت انجام شد",
