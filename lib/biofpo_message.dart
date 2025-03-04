@@ -9,6 +9,7 @@ class BioFpoMessage {
     required String title,
     required String message,
     SnackPosition position = SnackPosition.TOP,
+
   }) {
     _showSnackbar(
       title: title,
@@ -16,6 +17,7 @@ class BioFpoMessage {
       backgroundColor: Colors.green,
       icon: Icons.check_circle,
       position: position,
+
     );
   }
 
@@ -83,7 +85,7 @@ class BioFpoMessage {
           /// متن‌ها در سمت راست
           Expanded(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
 
                 Text(
@@ -97,7 +99,7 @@ class BioFpoMessage {
                 ),
 
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.start
+                  mainAxisAlignment: MainAxisAlignment.end
                   ,
                   children: [
                   Icon(icon, color: Colors.white, size: 28),
