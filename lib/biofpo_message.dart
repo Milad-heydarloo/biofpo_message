@@ -24,10 +24,11 @@ class BioFpoMessage {
       backgroundColor: backgroundColor,
       colorText: Colors.white,
       borderRadius: 12,
-      margin: EdgeInsets.all(10),
-      padding: EdgeInsets.all(16),
-      duration: Duration(seconds: 3),
-      animationDuration: Duration(milliseconds: 500),
+      margin: const EdgeInsets.all(10),
+      padding: const EdgeInsets.all(16),
+      duration: const Duration(seconds: 3),
+      animationDuration: const Duration(milliseconds: 500),
+
       forwardAnimationCurve: Curves.easeOutBack,
       reverseAnimationCurve: Curves.easeInBack,
     );
