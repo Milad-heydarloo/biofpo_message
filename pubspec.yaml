@@ -1,7 +1,8 @@
 name: biofpo_message
 description: "پروژه نمایش پیغام با موضوع، توضیحات و رنگ."
 
-publish_to: none
+publish_to: https://pub.dev
+
 
 homepage: https://github.com/Milad-heydarloo/biofpo_message
 repository: https://github.com/Milad-heydarloo/biofpo_message
