@@ -1,6 +1,8 @@
 name: biofpo_message
 description: "پروژه نمایش پیغام با موضوع، توضیحات و رنگ."
-publish_to: "https://pub.dev" # مقدار 'none' را حذف کردیم
+
+publish_to: none
+
 homepage: https://github.com/Milad-heydarloo/biofpo_message
 repository: https://github.com/Milad-heydarloo/biofpo_message
 
